@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0 0 0;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+}
+
+.states{
+    stroke-width: 1px;
+}
+.nation{
+    stroke-width: 2px;
+}
