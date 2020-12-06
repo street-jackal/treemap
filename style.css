@@ -9,11 +9,45 @@ body{
 h1{
     text-align: center;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+h2{
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
 
 .states{
     stroke-width: 1px;
 }
 .nation{
-    stroke-width: 2px;
+    stroke-width: 1px;
 }
+
+.tooltip{
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    border-radius: 4px;
+    background-color: #665c54;
+    border: 2px solid black;
+    color: white;
+}
+
+.legend{
+    display: flex;
+    flex-shrink: 1;
+    flex-basis: 0;
+    stroke-width: 2;
+    stroke: black;
+    fill: white;
+  }
