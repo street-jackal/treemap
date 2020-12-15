@@ -2,10 +2,15 @@ const mapData = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_ma
 
 const fontSize = 12;
 
+const docWidth  = window.innerWidth || document.documentElement.clientWidth || 
+document.body.clientWidth;
+const docHeight = window.innerHeight|| document.documentElement.clientHeight|| 
+document.body.clientHeight;
+
 // set the dimensions and margins of the graph
-var margin = { top: 10, right: 10, bottom: 10, left: 10 },
-    width = 1400 - margin.left - margin.right,
-    height = 1400 - margin.top - margin.bottom;
+const margin = { top: 10, right: 10, bottom: 10, left: 10 },
+    width = docWidth - margin.left - margin.right,
+    height = 1100 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -154,6 +159,7 @@ d3.json(mapData, function (data) {
     // add legend title
     d3.select("body").append("section")
         .append("h2")
+
         .text("Legend");
     
     // add legend svg
